@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/gunung"
+            android:title="Wisata Gunung" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/hiking"
+            android:title="Manfaat Pendakian" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/safety"
+            android:title="Safety and Rescue" />
+
+        <item
+            android:id="@+id/nav_pos"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Pos Pendakian" />
+
+        <item
+            android:id="@+id/nav_image"
+            android:icon="@drawable/ic_image_black_24dp"
+            android:title="Galeri" />
+
+
+    </group>
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.detail.DetailManfaat"
+    tools:showIn="@layout/activity_detail_manfaat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/nav_header_vertical_spacing"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_date"
+                android:textSize="@dimen/subsub_judul"
+                tools:text="2018/10/01" />
+
+            <TextView
+                android:id="@+id/txt_jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:textSize="@dimen/subsub_judul"
+                tools:text="18.00 wib" />
+
+            <TextView
+                android:id="@+id/txt_penulis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:textSize="@dimen/subsub_judul"
+                tools:text="Di posting oleh : Ujib" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_artikel" />
+
+        <WebView
+            android:id="@+id/txt_isi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/large_text"
+            tools:ignore="WebViewLayout" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
